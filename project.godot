@@ -11,10 +11,9 @@ config_version=5
 [application]
 
 config/name="sword-defence-game"
-run/main_scene="uid://8dlfsd6eiy24"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
 [display]
 
-window/size/viewport_width=1280
+window/size/viewport_width=1580
 window/size/viewport_height=1280

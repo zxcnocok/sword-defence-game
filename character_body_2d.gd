@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+<<<<<<< HEAD
 @export var health: int = 100
 @export var speed: int = 50
 @export var reward: int = 10  # деньги за убийство
@@ -40,3 +41,7 @@ func die():
 	
 	# Удаляем моба
 	queue_free()
+=======
+func _physics_process(delta):
+	get_parent().progress += 100 * delta
+>>>>>>> a6db057068b143bc9e56c359fec06d6518a46400

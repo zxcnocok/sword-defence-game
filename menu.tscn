@@ -36,23 +36,33 @@ theme_override_constants/margin_bottom = 200
 layout_mode = 2
 
 [node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Старт"
 autowrap_mode = 2
 autowrap_trim_flags = 0
 
+[node name="Minigame" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Мини-игры"
+
 [node name="Setting" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Настройки"
 
 [node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Выход"
 icon = SubResource("CanvasTexture_mae5d")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Minigame" to="." method="_on_minigame_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Setting" to="." method="_on_setting_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
